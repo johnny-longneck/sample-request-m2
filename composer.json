@@ -19,7 +19,7 @@
       "name": "John Herholz",
       "role": "Developer"
     }
-  ]
+  ],
   "autoload": {
     "files": [ "registration.php" ],
     "psr-4": {
