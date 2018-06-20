@@ -6,14 +6,6 @@
   },
   "type": "magento2-module",
   "version": "1.0.0",
-  "extra": {
-    "map": [
-      [
-        "*",
-        "Longneck/SampleRequest/"
-      ]
-    ]
-  },
   "authors": [
     {
       "name": "John Herholz",
