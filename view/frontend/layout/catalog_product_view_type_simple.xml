@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      John Herholz <info@longneckdesigns.de>
+ * @copyright   Longneck Designs, 2018
+ * @license     See license.txt
+ **/
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="product.info.addtocart">
+            <block class="Longneck\SampleRequest\Block\SampleRequestForm" name="product.info.sample.additional" as="samplerequest" template="Longneck_SampleRequest::samplebutton.phtml" before="-" ifconfig="samplerequest/configuration/enable"></block>
+        </referenceBlock>
+    </body>
+</page>

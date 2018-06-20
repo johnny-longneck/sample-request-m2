@@ -1,0 +1,29 @@
+{
+  "name": "longneck/samplerequest",
+  "description": "Sample Request form",
+  "require": {
+    "magento/project-community-edition": "*"
+  },
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "extra": {
+    "map": [
+      [
+        "*",
+        "Longneck/SampleRequest/"
+      ]
+    ]
+  },
+  "authors": [
+    {
+      "name": "John Herholz",
+      "role": "Developer"
+    }
+  ]
+  "autoload": {
+    "files": [ "registration.php" ],
+    "psr-4": {
+      "Longneck\\SampleRequest\\": ""
+    }
+  }
+}

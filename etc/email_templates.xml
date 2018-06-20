@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      John Herholz <info@longneckdesigns.de>
+ * @copyright   Longneck Designs, 2018
+ * @license     See license.txt
+ **/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="samplerequest_email_template" label="Sample Request Form" file="submitted_form.html" type="html" module="Longneck_SampleRequest" area="frontend"/>
+</config>

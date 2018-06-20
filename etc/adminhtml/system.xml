@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      John Herholz <info@longneckdesigns.de>
+ * @copyright   Longneck Designs, 2018
+ * @license     See license.txt
+ **/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="longneck" translate="label" sortOrder="300">
+            <label><![CDATA[Longneck Designs]]></label>
+        </tab>
+        <section id="samplerequest" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+            <label>Sample Request</label>
+            <tab>longneck</tab>
+            <resource>Longneck_SampleRequest::samplesettings</resource>
+            <group id="configuration" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+                <label>Configuration</label>
+                <field id="enable" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+                    <label>Enable Module</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="message" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="textarea">
+                    <label>Text Hint for sample request</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

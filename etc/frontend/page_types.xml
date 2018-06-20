@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      John Herholz <info@longneckdesigns.de>
+ * @copyright   Longneck Designs, 2018
+ * @license     See license.txt
+ **/
+-->
+<page_types xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_types.xsd">
+    <type id="samplerequest_index_index" label="Sample Request"/>
+</page_types>

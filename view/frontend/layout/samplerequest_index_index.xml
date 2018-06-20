@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      John Herholz <info@longneckdesigns.de>
+ * @copyright   Longneck Designs, 2018
+ * @license     See license.txt
+ **/
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Sample Request</title>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Longneck\SampleRequest\Block\SampleRequestForm" name="samplerequest" template="Longneck_SampleRequest::sampleform.phtml" ifconfig="samplerequest/configuration/enable">
+                <arguments>
+                    <argument name="is_standalone" xsi:type="boolean">1</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

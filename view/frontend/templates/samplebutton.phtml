@@ -1,0 +1,42 @@
+<?php
+/**
+ * @author      John Herholz <info@longneckdesigns.de>
+ * @copyright   Longneck Designs, 2018
+ * @license     See license.txt
+ **/
+
+if($block->getIsSampleRequest() == 1) :
+?><button type="button" class="clear abs-button-l" id="sample-request"><?php echo __('Request sample')?></button>
+<script>
+    require(
+        [
+            'jquery',
+            'Magento_Ui/js/modal/modal'
+        ],
+        function(
+            $,
+            modal
+        ) {
+            var options = {
+                type: 'popup',
+                responsive: true,
+                innerScroll: true,
+                title: "<?php echo __('Request sample')?>",
+                buttons: [/*{
+                    text: $.mage.__('Close'),
+                    class: '',
+                    click: function () {
+                        this.closeModal();
+                    }
+                }*/]
+            };
+
+            var popup = modal(options, $('#request-form'));
+            $("#sample-request").on('click',function(){
+                $("#request-form").modal("openModal");
+            });
+
+        }
+    );
+</script>
+<?php endif; ?>

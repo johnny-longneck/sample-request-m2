@@ -1,0 +1,51 @@
+<!--
+/**
+ * @author      John Herholz <info@longneckdesigns.de>
+ * @copyright   Longneck Designs, 2018
+ * @license     See license.txt
+ **/
+-->
+<!--@subject {{trans "Sample Request"}} @-->
+<!--@vars {
+"var data.comment":"Comment",
+"var data.sample-email":"Sender Email",
+"var data.sample-firstname":"Sender First Name",
+"var data.sample-lastname":"Sender Last Name",
+"var data.sample-phone":"Sender Telephone",
+"var data.sample-street_1":"Sender Address Line 1",
+"var data.sample-street_2":"Sender Address Line 2",
+"var data.sample-zip":"Sender Zip",
+"var data.country_id":"Sender Country",
+} @-->
+{{template config_path="design/email/header_template"}}
+
+<table class="message-details">
+    <tr>
+        <td><b>{{trans "Name"}}</b></td>
+        <td>{{var data.sample-firstname}} {{var data.sample-lastname}}</td>
+    </tr>
+    <tr>
+        <td><b>{{trans "Email"}}</b></td>
+        <td>{{var data.sample-email}}</td>
+    </tr>
+    <tr>
+        <td><b>{{trans "Phone"}}</b></td>
+        <td>{{var data.sample-phone}}</td>
+    </tr>
+    <tr>
+        <td><b>{{trans "Requested Product"}}</b></td>
+        <td>{{var data.product_id}}</td>
+    </tr>
+    <tr>
+        <td><b>{{trans "Address"}}</b></td>
+        <td>{{var data.sample-street_1}}<br />
+            {{var data.sample-street_2}}<br />
+            {{var data.sample-zip}} {{var data.sample-city}}<br />
+            {{var data.country_id}}
+        </td>
+    </tr>
+</table>
+<p><b>{{trans "Message"}}</b></p>
+<p>{{var data.comment}}</p>
+
+{{template config_path="design/email/footer_template"}}
