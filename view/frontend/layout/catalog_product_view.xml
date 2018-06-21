@@ -9,7 +9,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="product.info.addtocart">
-            <block class="Longneck\SampleRequest\Block\SampleRequestForm" name="product.info.samplebutton" as="samplerequest.button" template="Longneck_SampleRequest::samplebutton.phtml" ifconfig="samplerequest/configuration/enable"></block>
+            <block class="Longneck\SampleRequest\Block\SampleRequestForm" name="product.info.samplebutton" as="samplerequest.button" template="Longneck_SampleRequest::samplebutton.phtml" ifconfig="samplerequest/configuration/enable" before="-"></block>
         </referenceBlock>
         <referenceBlock name="content">
             <block class="Longneck\SampleRequest\Block\SampleRequestForm" name="product.info.sample.form" as="samplerequestform" template="Longneck_SampleRequest::sampleform.phtml" after="-"/>
